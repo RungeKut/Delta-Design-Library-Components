@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DeltaDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Unit="mm" Version="3.0.44846.517" Program="DeltaDesign.XML" DateExport="UTC 2021-11-10 11:56:06" XmlVersion="3.0" Licenses="Standard" CRC="E7E56C49" xmlns="DeltaDesign.XmlObject">
+<DeltaDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Unit="mm" Version="3.0.44846.517" Program="DeltaDesign.XML" DateExport="UTC 2022-03-30 06:49:23" XmlVersion="3.0" Licenses="Standard" CRC="EF12D6A5" xmlns="DeltaDesign.XmlObject">
   <Libraries>
-    <Library Name="Others" Modified="UTC 2021-09-21 06:58:48" Created="UTC 2020-11-03 11:30:10" SecurityDescriptor="">
+    <Library Name="Others" Modified="UTC 2021-12-14 14:14:48" Created="UTC 2020-11-03 11:30:10" SecurityDescriptor="">
       <Folder Name="Shapes" Type="Shapes" Flags="System" SecurityDescriptor="">
         <Folder Name="CustomShapes" Type="Shapes" Flags="System" SecurityDescriptor="" />
         <PadShape Name="Oblong 0.25x0.5" Modified="UTC 2021-01-29 09:47:28" Created="UTC 2021-01-29 09:47:28" Type="Oblong" SecurityDescriptor="">
@@ -390,6 +390,40 @@
         </Padstack>
       </Folder>
       <Folder Name="Посадочные места" Type="Footprints" Flags="System" SecurityDescriptor="">
+        <Footprint SecurityDescriptor="" PackageRef="Default" PlacementRules="6" Verified="true" IdPool="0:2" Name="2119640001" Author="budarin.l" Created="UTC 2021-12-14 14:10:25" Modified="UTC 2021-12-14 14:14:36">
+          <Pads>
+            <Pad PadNumber="1" Location="-1.3;0" Angle="90" GPN="0001" PadstackRef="SMD_RCRect1.5x1.2x0.2" />
+            <Pad PadNumber="2" Location="1.3;0" Angle="90" GPN="0002" PadstackRef="SMD_RCRect1.5x1.2x0.2" />
+          </Pads>
+          <TechnologyItem Technology="Default">
+            <GraphicData>
+              <PlacementOutlineX Style="PlacementOutlineFigure" Layer="PLACEMENT_OUTLINE_MOUNT" Flags="ColorByLayer">
+                <Polygon Style="PlacementOutlineFigure" Layer="PLACEMENT_OUTLINE_MOUNT" Flags="ColorByLayer">
+                  <Line StartPoint="-1.9;-0.775" EndPoint="-1.9;0.775" />
+                  <Line StartPoint="-1.9;0.775" EndPoint="1.9;0.775" />
+                  <Line StartPoint="1.9;0.775" EndPoint="1.9;-0.775" />
+                  <Line StartPoint="1.9;-0.775" EndPoint="-1.9;-0.775" />
+                </Polygon>
+              </PlacementOutlineX>
+              <AttributeG Layer="SILK_MOUNT" Flags="ColorByLayer" Alignment="{Center,Middle}" Color="FFFFFFFF" Location="0;1.5" Name="RefDes">
+                <SchematicFont FontFamily="GOST 26.008—85" Size="0.9" />
+              </AttributeG>
+              <RectangleG Layer="ASSEMBLY_MOUNT" Flags="ColorByLayer" FillColor="00000000" BorderWidth="0.2" BorderColor="00000000" Location="-1.9;-0.8" Width="3.75" Height="1.55" />
+              <AttributeG Layer="ASSEMBLY_MOUNT" Flags="ColorByLayer" Alignment="{Center,Middle}" Color="FFFFFFFF" Location="0.05;0.1" Name="RefDes">
+                <SchematicFont FontFamily="GOST 26.008—85" Size="0.7" />
+              </AttributeG>
+              <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.3" LineColor="00000000">
+                <Line StartPoint="-0.45;0.75" EndPoint="0.45;0.75" />
+              </PolylineX>
+              <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.3" LineColor="00000000">
+                <Line StartPoint="-0.45;-0.8" EndPoint="0.45;-0.8" />
+              </PolylineX>
+            </GraphicData>
+          </TechnologyItem>
+          <Fields>
+            <Attribute Name="MD5/CRC"></Attribute>
+          </Fields>
+        </Footprint>
         <Footprint SecurityDescriptor="" PackageRef="Default" PlacementRules="0" Verified="true" IdPool="0:1" Name="ANT-BEAD-868" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2020-11-03 11:30:10">
           <Pads>
             <Pad PadNumber="1" GPN="0001" PadstackRef="THT_Rnd0.7_Rnd1.5" />
@@ -1718,6 +1752,351 @@
             </Designs>
           </Component>
         </Folder>
+        <Folder Name="Antenna" Type="Components" SecurityDescriptor="">
+          <Component Name="2119640001" Prefix="WA" Family="WA" Created="UTC 2021-12-14 14:06:50" Modified="UTC 2021-12-14 14:14:48" Valid="true" SecurityDescriptor="">
+            <Parts>
+              <Part>
+                <Attribute Name="PartName">2119640001</Attribute>
+                <Attribute Name="PartNumber">2119640001</Attribute>
+                <Attribute Name="Footprint">2119640001</Attribute>
+                <Attribute Name="Weight" />
+                <Attribute Name="Comment" />
+                <Attribute Name="Actual" />
+                <Attribute Name="TU" />
+                <Attribute Name="Manufacturer" />
+              </Part>
+            </Parts>
+            <Pins>
+              <Pin Id="1" Label="1" Name="1" Order="1" />
+              <Pin Id="2" Label="2" Name="2" Order="2" />
+            </Pins>
+            <Designs>
+              <SymbolView Name="По умолчанию" SecurityDescriptor="" IsDefault="true" Modified="UTC 2021-12-14 14:08:29" Created="UTC 2021-12-14 14:06:50" Number="0">
+                <Gate Name="" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
+                  <Pins>
+                    <PinImplementation PinId="1" SymbolPinId="1" />
+                    <PinImplementation PinId="2" SymbolPinId="2" />
+                  </Pins>
+                </Gate>
+                <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
+                  <Graphics>
+                    <RotatedView>
+                      <Graphics>
+                        <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-5" Width="9" Height="7" />
+                        <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-3;2" Name="RefDes" />
+                        <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-4;-5" />
+                        <SymbolPin Offset="0;-5" PinId="1" Length="3" Direction="Down" AttributesArrangement="Custom">
+                          <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;4.27" Name="Label">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Bottom}" Location="0;0.968" Text="?" Name="PadNumber">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
+                        </SymbolPin>
+                        <SymbolPin Offset="6;2" PinId="2" Length="3" Direction="Right" AttributesArrangement="Custom">
+                          <AttributeG Flags="NotVisible" Alignment="{Right,Middle}" Location="-4.27;0" Name="Label">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Flags="NotVisible" Location="-0.968;0" Text="?" Name="PadNumber">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Left,Middle}" Location="4;0" Text="2" Name="TG" />
+                        </SymbolPin>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="0;-2" EndPoint="0;2" />
+                          <Line StartPoint="0;2" EndPoint="-3;2" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="-3;2" EndPoint="0;-2" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="0;2" EndPoint="3;2" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="3;2" EndPoint="0;-2" />
+                        </PolylineX>
+                      </Graphics>
+                    </RotatedView>
+                  </Graphics>
+                </InternalSymbol>
+              </SymbolView>
+              <FootprintView Name="2119640001" SecurityDescriptor="" Modified="UTC 2021-12-14 14:14:45" Created="UTC 2021-12-14 14:14:45" FootprintRef="2119640001">
+                <Pins>
+                  <PinRef PinId="1" PadNumber="1" />
+                  <PinRef PinId="2" PadNumber="2" />
+                </Pins>
+              </FootprintView>
+            </Designs>
+          </Component>
+          <Component Name="ANT-BEAD-868" Prefix="A" Family="A" Description="RF Solutions Antenna ANT-BEAD-868, Miniature Bead 868MHz" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2020-11-03 11:32:27" Valid="true" SecurityDescriptor="">
+            <Parts>
+              <Part>
+                <Attribute Name="PartName">ANT-BEAD-868</Attribute>
+                <Attribute Name="PartNumber" />
+                <Attribute Name="Footprint">ANT-BEAD-868</Attribute>
+                <Attribute Name="Weight" />
+                <Attribute Name="Comment" />
+                <Attribute Name="Actual" />
+                <Attribute Name="TU" />
+                <Attribute Name="Manufacturer" />
+              </Part>
+            </Parts>
+            <Pins>
+              <Pin Id="1" Label="1" Name="1" Type="Passive" Order="1" />
+            </Pins>
+            <Designs>
+              <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2020-11-03 11:32:27" Created="UTC 2020-11-03 11:30:10" Number="0">
+                <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
+                  <Pins>
+                    <PinImplementation PinId="1" SymbolPinId="1" />
+                  </Pins>
+                </Gate>
+                <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
+                  <Graphics>
+                    <RotatedView>
+                      <Graphics>
+                        <PinRectangle Flags="NotSelectable NotVisible" Location="-5;0" Width="10" Height="7" />
+                        <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-5.6384;8.5331" Name="RefDes" />
+                        <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-16.3026;0.7895" />
+                        <SymbolPin PinId="1" Length="3" Direction="Down" AttributesArrangement="Custom">
+                          <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;4.27" Name="Label">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Bottom}" Location="0;0.968" Text="1" Name="PadNumber">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
+                        </SymbolPin>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="0;3" EndPoint="0;7" />
+                          <Line StartPoint="0;7" EndPoint="-3;7" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="-3;7" EndPoint="0;3" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="0;7" EndPoint="3;7" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="3;7" EndPoint="0;3" />
+                        </PolylineX>
+                      </Graphics>
+                    </RotatedView>
+                  </Graphics>
+                </InternalSymbol>
+              </SymbolView>
+              <FootprintView Name="ANT-BEAD-868" SecurityDescriptor="" Modified="UTC 2020-11-03 11:30:10" Created="UTC 2020-11-03 11:30:10" FootprintRef="ANT-BEAD-868">
+                <Pins>
+                  <PinRef PinId="1" PadNumber="1" />
+                </Pins>
+              </FootprintView>
+            </Designs>
+          </Component>
+          <Component Name="ANTENNA_868_DN038" Prefix="A" Family="A" Description="Антенна 868 МГц - 50 Ом - DN038" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2020-11-03 11:32:29" Valid="false" SecurityDescriptor="">
+            <Parts>
+              <Part>
+                <Attribute Name="PartName">ANTENNA_868_DN038</Attribute>
+                <Attribute Name="PartNumber" />
+                <Attribute Name="Footprint">ANTENNA 868 MHz</Attribute>
+                <Attribute Name="Weight" />
+                <Attribute Name="Comment" />
+                <Attribute Name="Actual" />
+                <Attribute Name="TU" />
+                <Attribute Name="Manufacturer" />
+              </Part>
+            </Parts>
+            <Pins>
+              <Pin Id="1" Label="1" Name="1" Type="Passive" Order="1" />
+            </Pins>
+            <Designs>
+              <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2020-11-03 11:31:07" Created="UTC 2020-11-03 11:30:10" Number="0">
+                <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
+                  <Pins>
+                    <PinImplementation PinId="1" SymbolPinId="1" />
+                  </Pins>
+                </Gate>
+                <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
+                  <Graphics>
+                    <RotatedView>
+                      <Graphics>
+                        <PinRectangle Flags="NotSelectable NotVisible" Location="-5;-3" Width="10" Height="8" />
+                        <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-1.27;1.27" Name="RefDes" />
+                        <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-5;-3" />
+                        <SymbolPin Offset="0;-3" PinId="1" Length="3" Direction="Down" AttributesArrangement="Custom">
+                          <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;4.27" Name="Label">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Bottom}" Location="0;0.968" Text="1" Name="PadNumber">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                        </SymbolPin>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line EndPoint="0;4" />
+                          <Line StartPoint="0;4" EndPoint="-3;4" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="-3;4" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="0;4" EndPoint="3;4" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="3;4" />
+                        </PolylineX>
+                      </Graphics>
+                    </RotatedView>
+                  </Graphics>
+                </InternalSymbol>
+              </SymbolView>
+              <FootprintView Name="ANTENNA 868 MHz" SecurityDescriptor="" Modified="UTC 2020-11-03 11:30:10" Created="UTC 2020-11-03 11:30:10" FootprintRef="ANTENNA 868 MHz">
+                <Pins>
+                  <PinRef PinId="1" PadNumber="1" />
+                </Pins>
+              </FootprintView>
+            </Designs>
+          </Component>
+          <Component Name="ANTENNA_868_SPIRAL" Prefix="A" Family="A" Description="Антенна  50 Ом - 868 MHz спираль 26 мм" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2021-03-30 08:05:28" Valid="true" SecurityDescriptor="">
+            <Parts>
+              <Part>
+                <Attribute Name="PartName">ANTENNA_868_SPIRAL</Attribute>
+                <Attribute Name="PartNumber" />
+                <Attribute Name="Footprint">ANTENNA SPIRAL 868 MHz 26mm</Attribute>
+                <Attribute Name="Weight" />
+                <Attribute Name="Comment" />
+                <Attribute Name="Actual" />
+                <Attribute Name="TU" />
+                <Attribute Name="Manufacturer" />
+              </Part>
+            </Parts>
+            <Pins>
+              <Pin Id="1" Label="1" Name="1" Type="Passive" Order="1" />
+              <Pin Id="2" Label="2" Name="2" Type="Passive" Order="2" />
+            </Pins>
+            <Designs>
+              <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2020-11-03 11:32:29" Created="UTC 2020-11-03 11:30:10" Number="0">
+                <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
+                  <Pins>
+                    <PinImplementation PinId="1" SymbolPinId="1" />
+                    <PinImplementation PinId="2" SymbolPinId="2" />
+                  </Pins>
+                </Gate>
+                <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
+                  <Graphics>
+                    <RotatedView>
+                      <Graphics>
+                        <PinRectangle Flags="NotSelectable NotVisible" Location="-5;-3" Width="11" Height="8" />
+                        <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-5.5388;5.1512" Name="RefDes" />
+                        <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-5;-3" />
+                        <SymbolPin Offset="0;-3" PinId="1" Length="3" Direction="Down" AttributesArrangement="Custom">
+                          <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;4.27" Name="Label">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Bottom}" Location="0;0.968" Text="1" Name="PadNumber">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
+                        </SymbolPin>
+                        <SymbolPin Offset="6;4" PinId="2" Length="3" Direction="Right" AttributesArrangement="Custom">
+                          <AttributeG Flags="NotVisible" Alignment="{Right,Middle}" Location="-4.27;0" Name="Label">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Flags="NotVisible" Location="-0.968;0" Text="2" Name="PadNumber">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Left,Middle}" Location="4;0" Text="2" Name="TG" />
+                        </SymbolPin>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line EndPoint="0;4" />
+                          <Line StartPoint="0;4" EndPoint="-3;4" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="-3;4" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="0;4" EndPoint="3;4" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="3;4" />
+                        </PolylineX>
+                      </Graphics>
+                    </RotatedView>
+                  </Graphics>
+                </InternalSymbol>
+              </SymbolView>
+              <FootprintView Name="ANTENNA SPIRAL 868 MHz 26mm" SecurityDescriptor="" Modified="UTC 2021-03-30 08:05:28" Created="UTC 2020-11-03 11:30:10" FootprintRef="ANTENNA SPIRAL 868 MHz 26mm">
+                <Pins>
+                  <PinRef PinId="1" PadNumber="1" />
+                  <PinRef PinId="2" PadNumber="2" />
+                </Pins>
+              </FootprintView>
+            </Designs>
+          </Component>
+          <Component Name="ANTENNA_IFA_BLUENRG" Prefix="A" Family="A" Description="Антенна IFA - 50 Ом - BLUENRG MEANDER" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2020-11-03 11:32:29" Valid="true" SecurityDescriptor="">
+            <Parts>
+              <Part>
+                <Attribute Name="PartName">ANTENNA_IFA_BLUENRG</Attribute>
+                <Attribute Name="PartNumber" />
+                <Attribute Name="Footprint">ANTENNA_IFA_BLUENRG</Attribute>
+                <Attribute Name="Weight" />
+                <Attribute Name="Comment" />
+                <Attribute Name="Actual" />
+                <Attribute Name="TU" />
+                <Attribute Name="Manufacturer" />
+              </Part>
+            </Parts>
+            <Pins>
+              <Pin Id="1" Label="1" Name="1" Type="Passive" Order="1" />
+            </Pins>
+            <Designs>
+              <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2020-11-03 11:32:29" Created="UTC 2020-11-03 11:30:10" Number="0">
+                <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
+                  <Pins>
+                    <PinImplementation PinId="1" SymbolPinId="1" />
+                  </Pins>
+                </Gate>
+                <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
+                  <Graphics>
+                    <RotatedView>
+                      <Graphics>
+                        <PinRectangle Flags="NotSelectable NotVisible" Location="-5;-3" Width="10" Height="8" />
+                        <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-5.1121;4.7437" Name="RefDes" />
+                        <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-5;-3" />
+                        <SymbolPin Offset="0;-3" PinId="1" Length="3" Direction="Down" AttributesArrangement="Custom">
+                          <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;4.27" Name="Label">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Angle="90" Alignment="{Right,Bottom}" Location="0;0.968" Text="1" Name="PadNumber">
+                            <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                          </AttributeG>
+                          <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
+                        </SymbolPin>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line EndPoint="0;4" />
+                          <Line StartPoint="0;4" EndPoint="-3;4" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="-3;4" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="0;4" EndPoint="3;4" />
+                        </PolylineX>
+                        <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                          <Line StartPoint="3;4" />
+                        </PolylineX>
+                      </Graphics>
+                    </RotatedView>
+                  </Graphics>
+                </InternalSymbol>
+              </SymbolView>
+              <FootprintView Name="ANTENNA_IFA_BLUENRG" SecurityDescriptor="" Modified="UTC 2020-11-03 11:30:10" Created="UTC 2020-11-03 11:30:10" FootprintRef="ANTENNA_IFA_BLUENRG">
+                <Pins>
+                  <PinRef PinId="1" PadNumber="1" />
+                </Pins>
+              </FootprintView>
+            </Designs>
+          </Component>
+        </Folder>
         <Component Name="AN2051 - 245" Prefix="A" Family="A" Description="Антенна IFA - 50 Ом - AN2051 245" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2020-11-03 11:32:27" Valid="true" SecurityDescriptor="">
           <Parts>
             <Part>
@@ -1790,273 +2169,6 @@
               <Pins>
                 <PinRef PinId="1" PadNumber="1" />
                 <PinRef PinId="2" PadNumber="2" />
-              </Pins>
-            </FootprintView>
-          </Designs>
-        </Component>
-        <Component Name="ANT-BEAD-868" Prefix="A" Family="A" Description="RF Solutions Antenna ANT-BEAD-868, Miniature Bead 868MHz" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2020-11-03 11:32:27" Valid="true" SecurityDescriptor="">
-          <Parts>
-            <Part>
-              <Attribute Name="PartName">ANT-BEAD-868</Attribute>
-              <Attribute Name="PartNumber" />
-              <Attribute Name="Footprint">ANT-BEAD-868</Attribute>
-              <Attribute Name="Weight" />
-              <Attribute Name="Comment" />
-              <Attribute Name="Actual" />
-              <Attribute Name="TU" />
-              <Attribute Name="Manufacturer" />
-            </Part>
-          </Parts>
-          <Pins>
-            <Pin Id="1" Label="1" Name="1" Type="Passive" Order="1" />
-          </Pins>
-          <Designs>
-            <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2020-11-03 11:32:27" Created="UTC 2020-11-03 11:30:10" Number="0">
-              <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
-                <Pins>
-                  <PinImplementation PinId="1" SymbolPinId="1" />
-                </Pins>
-              </Gate>
-              <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
-                <Graphics>
-                  <RotatedView>
-                    <Graphics>
-                      <PinRectangle Flags="NotSelectable NotVisible" Location="-5;0" Width="10" Height="7" />
-                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-5.6384;8.5331" Name="RefDes" />
-                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-16.3026;0.7895" />
-                      <SymbolPin PinId="1" Length="3" Direction="Down" AttributesArrangement="Custom">
-                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;4.27" Name="Label">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Bottom}" Location="0;0.968" Text="1" Name="PadNumber">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
-                      </SymbolPin>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="0;3" EndPoint="0;7" />
-                        <Line StartPoint="0;7" EndPoint="-3;7" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="-3;7" EndPoint="0;3" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="0;7" EndPoint="3;7" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="3;7" EndPoint="0;3" />
-                      </PolylineX>
-                    </Graphics>
-                  </RotatedView>
-                </Graphics>
-              </InternalSymbol>
-            </SymbolView>
-            <FootprintView Name="ANT-BEAD-868" SecurityDescriptor="" Modified="UTC 2020-11-03 11:30:10" Created="UTC 2020-11-03 11:30:10" FootprintRef="ANT-BEAD-868">
-              <Pins>
-                <PinRef PinId="1" PadNumber="1" />
-              </Pins>
-            </FootprintView>
-          </Designs>
-        </Component>
-        <Component Name="ANTENNA_868_DN038" Prefix="A" Family="A" Description="Антенна 868 МГц - 50 Ом - DN038" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2020-11-03 11:32:29" Valid="false" SecurityDescriptor="">
-          <Parts>
-            <Part>
-              <Attribute Name="PartName">ANTENNA_868_DN038</Attribute>
-              <Attribute Name="PartNumber" />
-              <Attribute Name="Footprint">ANTENNA 868 MHz</Attribute>
-              <Attribute Name="Weight" />
-              <Attribute Name="Comment" />
-              <Attribute Name="Actual" />
-              <Attribute Name="TU" />
-              <Attribute Name="Manufacturer" />
-            </Part>
-          </Parts>
-          <Pins>
-            <Pin Id="1" Label="1" Name="1" Type="Passive" Order="1" />
-          </Pins>
-          <Designs>
-            <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2020-11-03 11:31:07" Created="UTC 2020-11-03 11:30:10" Number="0">
-              <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
-                <Pins>
-                  <PinImplementation PinId="1" SymbolPinId="1" />
-                </Pins>
-              </Gate>
-              <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
-                <Graphics>
-                  <RotatedView>
-                    <Graphics>
-                      <PinRectangle Flags="NotSelectable NotVisible" Location="-5;-3" Width="10" Height="8" />
-                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-1.27;1.27" Name="RefDes" />
-                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-5;-3" />
-                      <SymbolPin Offset="0;-3" PinId="1" Length="3" Direction="Down" AttributesArrangement="Custom">
-                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;4.27" Name="Label">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Bottom}" Location="0;0.968" Text="1" Name="PadNumber">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                      </SymbolPin>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line EndPoint="0;4" />
-                        <Line StartPoint="0;4" EndPoint="-3;4" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="-3;4" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="0;4" EndPoint="3;4" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="3;4" />
-                      </PolylineX>
-                    </Graphics>
-                  </RotatedView>
-                </Graphics>
-              </InternalSymbol>
-            </SymbolView>
-            <FootprintView Name="ANTENNA 868 MHz" SecurityDescriptor="" Modified="UTC 2020-11-03 11:30:10" Created="UTC 2020-11-03 11:30:10" FootprintRef="ANTENNA 868 MHz">
-              <Pins>
-                <PinRef PinId="1" PadNumber="1" />
-              </Pins>
-            </FootprintView>
-          </Designs>
-        </Component>
-        <Component Name="ANTENNA_868_SPIRAL" Prefix="A" Family="A" Description="Антенна  50 Ом - 868 MHz спираль 26 мм" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2021-03-30 08:05:28" Valid="true" SecurityDescriptor="">
-          <Parts>
-            <Part>
-              <Attribute Name="PartName">ANTENNA_868_SPIRAL</Attribute>
-              <Attribute Name="PartNumber" />
-              <Attribute Name="Footprint">ANTENNA SPIRAL 868 MHz 26mm</Attribute>
-              <Attribute Name="Weight" />
-              <Attribute Name="Comment" />
-              <Attribute Name="Actual" />
-              <Attribute Name="TU" />
-              <Attribute Name="Manufacturer" />
-            </Part>
-          </Parts>
-          <Pins>
-            <Pin Id="1" Label="1" Name="1" Type="Passive" Order="1" />
-            <Pin Id="2" Label="2" Name="2" Type="Passive" Order="2" />
-          </Pins>
-          <Designs>
-            <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2020-11-03 11:32:29" Created="UTC 2020-11-03 11:30:10" Number="0">
-              <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
-                <Pins>
-                  <PinImplementation PinId="1" SymbolPinId="1" />
-                  <PinImplementation PinId="2" SymbolPinId="2" />
-                </Pins>
-              </Gate>
-              <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
-                <Graphics>
-                  <RotatedView>
-                    <Graphics>
-                      <PinRectangle Flags="NotSelectable NotVisible" Location="-5;-3" Width="11" Height="8" />
-                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-5.5388;5.1512" Name="RefDes" />
-                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-5;-3" />
-                      <SymbolPin Offset="0;-3" PinId="1" Length="3" Direction="Down" AttributesArrangement="Custom">
-                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;4.27" Name="Label">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Bottom}" Location="0;0.968" Text="1" Name="PadNumber">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
-                      </SymbolPin>
-                      <SymbolPin Offset="6;4" PinId="2" Length="3" Direction="Right" AttributesArrangement="Custom">
-                        <AttributeG Flags="NotVisible" Alignment="{Right,Middle}" Location="-4.27;0" Name="Label">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                        <AttributeG Flags="NotVisible" Location="-0.968;0" Text="2" Name="PadNumber">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Left,Middle}" Location="4;0" Text="2" Name="TG" />
-                      </SymbolPin>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line EndPoint="0;4" />
-                        <Line StartPoint="0;4" EndPoint="-3;4" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="-3;4" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="0;4" EndPoint="3;4" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="3;4" />
-                      </PolylineX>
-                    </Graphics>
-                  </RotatedView>
-                </Graphics>
-              </InternalSymbol>
-            </SymbolView>
-            <FootprintView Name="ANTENNA SPIRAL 868 MHz 26mm" SecurityDescriptor="" Modified="UTC 2021-03-30 08:05:28" Created="UTC 2020-11-03 11:30:10" FootprintRef="ANTENNA SPIRAL 868 MHz 26mm">
-              <Pins>
-                <PinRef PinId="1" PadNumber="1" />
-                <PinRef PinId="2" PadNumber="2" />
-              </Pins>
-            </FootprintView>
-          </Designs>
-        </Component>
-        <Component Name="ANTENNA_IFA_BLUENRG" Prefix="A" Family="A" Description="Антенна IFA - 50 Ом - BLUENRG MEANDER" Created="UTC 2020-11-03 11:30:10" Modified="UTC 2020-11-03 11:32:29" Valid="true" SecurityDescriptor="">
-          <Parts>
-            <Part>
-              <Attribute Name="PartName">ANTENNA_IFA_BLUENRG</Attribute>
-              <Attribute Name="PartNumber" />
-              <Attribute Name="Footprint">ANTENNA_IFA_BLUENRG</Attribute>
-              <Attribute Name="Weight" />
-              <Attribute Name="Comment" />
-              <Attribute Name="Actual" />
-              <Attribute Name="TU" />
-              <Attribute Name="Manufacturer" />
-            </Part>
-          </Parts>
-          <Pins>
-            <Pin Id="1" Label="1" Name="1" Type="Passive" Order="1" />
-          </Pins>
-          <Designs>
-            <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2020-11-03 11:32:29" Created="UTC 2020-11-03 11:30:10" Number="0">
-              <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
-                <Pins>
-                  <PinImplementation PinId="1" SymbolPinId="1" />
-                </Pins>
-              </Gate>
-              <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
-                <Graphics>
-                  <RotatedView>
-                    <Graphics>
-                      <PinRectangle Flags="NotSelectable NotVisible" Location="-5;-3" Width="10" Height="8" />
-                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-5.1121;4.7437" Name="RefDes" />
-                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-5;-3" />
-                      <SymbolPin Offset="0;-3" PinId="1" Length="3" Direction="Down" AttributesArrangement="Custom">
-                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;4.27" Name="Label">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                        <AttributeG Angle="90" Alignment="{Right,Bottom}" Location="0;0.968" Text="1" Name="PadNumber">
-                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
-                        </AttributeG>
-                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
-                      </SymbolPin>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line EndPoint="0;4" />
-                        <Line StartPoint="0;4" EndPoint="-3;4" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="-3;4" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="0;4" EndPoint="3;4" />
-                      </PolylineX>
-                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
-                        <Line StartPoint="3;4" />
-                      </PolylineX>
-                    </Graphics>
-                  </RotatedView>
-                </Graphics>
-              </InternalSymbol>
-            </SymbolView>
-            <FootprintView Name="ANTENNA_IFA_BLUENRG" SecurityDescriptor="" Modified="UTC 2020-11-03 11:30:10" Created="UTC 2020-11-03 11:30:10" FootprintRef="ANTENNA_IFA_BLUENRG">
-              <Pins>
-                <PinRef PinId="1" PadNumber="1" />
               </Pins>
             </FootprintView>
           </Designs>

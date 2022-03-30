@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DeltaDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Unit="mm" Version="3.0.44846.517" Program="DeltaDesign.XML" DateExport="UTC 2021-11-10 11:56:29" XmlVersion="3.0" Licenses="Standard" CRC="6CB0404B" xmlns="DeltaDesign.XmlObject">
+<DeltaDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Unit="mm" Version="3.0.44846.517" Program="DeltaDesign.XML" DateExport="UTC 2022-03-30 06:50:00" XmlVersion="3.0" Licenses="Standard" CRC="3D79BFCB" xmlns="DeltaDesign.XmlObject">
   <Libraries>
-    <Library Name="Relay" Modified="UTC 2021-08-12 07:58:08" Created="UTC 2020-10-27 08:15:00" SecurityDescriptor="">
+    <Library Name="Relay" Modified="UTC 2022-02-28 05:25:39" Created="UTC 2020-10-27 08:15:00" SecurityDescriptor="">
       <Folder Name="Shapes" Type="Shapes" Flags="System" SecurityDescriptor="">
         <Folder Name="CustomShapes" Type="Shapes" Flags="System" SecurityDescriptor="" />
         <PadShape Name="Round 1.6" Modified="UTC 2020-10-30 06:51:42" Created="UTC 2020-10-30 06:51:42" Type="Round" SecurityDescriptor="">
@@ -180,13 +180,13 @@
             <Attribute Name="MD5/CRC"></Attribute>
           </Fields>
         </Footprint>
-        <Footprint SecurityDescriptor="" PackageRef="Default" PlacementRules="6" Verified="true" IdPool="0:5" Name="TTi_TRD" Author="Bolshakov.S" Created="UTC 2021-08-12 06:57:21" Modified="UTC 2021-08-12 07:09:45">
+        <Footprint SecurityDescriptor="" PackageRef="Default" PlacementRules="6" Verified="true" IdPool="0:5" Name="TTi_TRD" Author="Bolshakov.S" Created="UTC 2021-08-12 06:57:21" Modified="UTC 2022-02-28 05:25:39">
           <Pads>
             <Pad PadNumber="1" Location="-6;6" GPN="0001" PadstackRef="THT_Rnd1.5_Rnd3" />
             <Pad PadNumber="2" Location="-6;-6" GPN="0002" PadstackRef="THT_Rnd1.5_Rnd3" />
             <Pad PadNumber="3" Location="-8;0" GPN="0003" PadstackRef="THT_Rnd1.5_Rnd3" />
-            <Pad PadNumber="4" Location="6;6" GPN="0004" PadstackRef="THT_Rnd1.5_Rnd3" />
-            <Pad PadNumber="5" Location="6;-6" GPN="0005" PadstackRef="THT_Rnd1.5_Rnd3" />
+            <Pad PadNumber="4" Location="6;-6" GPN="0004" PadstackRef="THT_Rnd1.5_Rnd3" />
+            <Pad PadNumber="5" Location="6;6" GPN="0005" PadstackRef="THT_Rnd1.5_Rnd3" />
           </Pads>
           <TechnologyItem Technology="Default">
             <GraphicData>
@@ -222,15 +222,37 @@
                 <Line StartPoint="6;-4" EndPoint="6;-2.5" />
               </PolylineX>
               <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.3" LineColor="00000000">
-                <Line StartPoint="7;-3" EndPoint="1.5;0" />
-                <Line StartPoint="1.5;0" EndPoint="-6;0" />
+                <Line StartPoint="7;3" EndPoint="1.5;0" />
+                <Line StartPoint="1.5;0" EndPoint="-0.5;0" />
               </PolylineX>
-              <TextG Layer="SILK_MOUNT" Flags="ColorByLayer" Alignment="{Center,Middle}" Color="FFD5C402" Location="2.5;-6" Text="NC">
+              <TextG Layer="SILK_MOUNT" Flags="ColorByLayer" Alignment="{Center,Middle}" Color="FFD5C402" Location="2.5;-6" Text="NO">
                 <SchematicFont FontFamily="GOST 26.008—85" Size="2" />
               </TextG>
-              <TextG Layer="SILK_MOUNT" Flags="ColorByLayer" Alignment="{Center,Top}" Color="FFD5C402" Location="2.5;8" Text="NO">
+              <TextG Layer="SILK_MOUNT" Flags="ColorByLayer" Alignment="{Center,Top}" Color="FFD5C402" Location="2.5;8" Text="NC">
                 <SchematicFont FontFamily="GOST 26.008—85" Size="2" />
               </TextG>
+              <AttributeG Style="PcbRefDes" Layer="ASSEMBLY_MOUNT" Flags="ColorByLayer" Alignment="{Center,Middle}" Name="RefDes" />
+              <RectangleG Layer="ASSEMBLY_MOUNT" Flags="ColorByLayer" FillColor="00000000" BorderWidth="0.3" BorderColor="00000000" Location="-9.5;-7.5" Width="19" Height="15" />
+              <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.3" LineColor="00000000">
+                <Arc StartPoint="-2.5;1" ThroughPoint="-1.5;2" EndPoint="-2.5;3" />
+              </PolylineX>
+              <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.3" LineColor="00000000">
+                <Line StartPoint="-2.5;3" EndPoint="-2.5;6" />
+                <Line StartPoint="-2.5;6" EndPoint="-4;6" />
+              </PolylineX>
+              <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.3" LineColor="00000000">
+                <Arc StartPoint="-2.5;-1" ThroughPoint="-1.5;-2" EndPoint="-2.5;-3" />
+              </PolylineX>
+              <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.3" LineColor="00000000">
+                <Line StartPoint="-2.5;-3" EndPoint="-2.5;-6" />
+                <Line StartPoint="-2.5;-6" EndPoint="-4;-6" />
+              </PolylineX>
+              <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.3" LineColor="00000000">
+                <Arc StartPoint="-2.5;-1" ThroughPoint="-1.5;0" EndPoint="-2.5;1" />
+              </PolylineX>
+              <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.3" LineColor="00000000">
+                <Line StartPoint="-6;0" EndPoint="-3.5;0" />
+              </PolylineX>
             </GraphicData>
           </TechnologyItem>
           <Fields>
@@ -1179,7 +1201,7 @@
             </FootprintView>
           </Designs>
         </Component>
-        <Component Name="TTi_TRD" Prefix="K" Family="K" Manufacturer="Tai-shing" Description="www.tai-shing.com.tw" Created="UTC 2021-08-12 06:03:10" Modified="UTC 2021-08-12 07:58:08" PartsNamePattern="{PartNumber}" Valid="true" SecurityDescriptor="">
+        <Component Name="TTi_TRD" Prefix="K" Family="K" Manufacturer="Tai-shing" Description="www.tai-shing.com.tw" Created="UTC 2021-08-12 06:03:10" Modified="UTC 2022-02-28 05:25:39" PartsNamePattern="{PartNumber}" Valid="true" SecurityDescriptor="">
           <Parts>
             <Part>
               <Attribute Name="PartName">TRD-24VDC-SC-CL-R</Attribute>
@@ -1631,7 +1653,7 @@
                 </Graphics>
               </InternalSymbol>
             </SymbolView>
-            <FootprintView Name="TTi_TRD" SecurityDescriptor="" Modified="UTC 2021-08-12 07:11:02" Created="UTC 2021-08-12 07:11:02" FootprintRef="TTi_TRD">
+            <FootprintView Name="TTi_TRD" SecurityDescriptor="" Modified="UTC 2022-02-28 05:25:39" Created="UTC 2021-08-12 07:11:02" FootprintRef="TTi_TRD">
               <Pins>
                 <PinRef PinId="1" PadNumber="1" />
                 <PinRef PinId="2" PadNumber="2" />

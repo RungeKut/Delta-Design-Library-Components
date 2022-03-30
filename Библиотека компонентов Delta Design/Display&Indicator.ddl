@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DeltaDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Unit="mm" Version="3.0.44846.517" Program="DeltaDesign.XML" DateExport="UTC 2021-11-10 11:54:36" XmlVersion="3.0" Licenses="Standard" CRC="754E5EEC" xmlns="DeltaDesign.XmlObject">
+<DeltaDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Unit="mm" Version="3.0.44846.517" Program="DeltaDesign.XML" DateExport="UTC 2022-03-30 06:47:47" XmlVersion="3.0" Licenses="Standard" CRC="754E5EEC" xmlns="DeltaDesign.XmlObject">
   <Libraries>
     <Library Name="Display&amp;Indicator" Modified="UTC 2021-07-20 07:39:18" Created="UTC 2020-12-10 10:35:38" SecurityDescriptor="">
       <Folder Name="Компоненты" Type="Components" Flags="System" SecurityDescriptor="">

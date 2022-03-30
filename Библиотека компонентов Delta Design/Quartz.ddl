@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<DeltaDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Unit="mm" Version="3.0.44846.517" Program="DeltaDesign.XML" DateExport="UTC 2021-11-10 11:56:18" XmlVersion="3.0" Licenses="Standard" CRC="A6D75AEB" xmlns="DeltaDesign.XmlObject">
+<DeltaDesign xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Unit="mm" Version="3.0.44846.517" Program="DeltaDesign.XML" DateExport="UTC 2022-03-30 06:49:36" XmlVersion="3.0" Licenses="Standard" CRC="4E1481C4" xmlns="DeltaDesign.XmlObject">
   <Libraries>
-    <Library Name="Quartz" Modified="UTC 2021-09-07 12:08:18" Created="UTC 2020-10-27 08:14:27" SecurityDescriptor="">
+    <Library Name="Quartz" Modified="UTC 2022-03-23 10:23:23" Created="UTC 2020-10-27 08:14:27" SecurityDescriptor="">
       <Folder Name="Shapes" Type="Shapes" Flags="System" SecurityDescriptor="">
         <Folder Name="CustomShapes" Type="Shapes" Flags="System" SecurityDescriptor="" />
         <PadShape Name="Rectangle 1.4x1.2" Modified="UTC 2021-03-19 06:25:49" Created="UTC 2021-03-19 06:25:49" Type="Rectangle" SecurityDescriptor="">
@@ -307,7 +307,7 @@
             <Attribute Name="MD5/CRC"></Attribute>
           </Fields>
         </Footprint>
-        <Footprint SecurityDescriptor="" PackageRef="Default" PlacementRules="0" Verified="true" IdPool="0:4" Name="KX-7" Author="Vartman.S" Created="UTC 2020-10-27 08:14:27" Modified="UTC 2021-04-02 11:53:23">
+        <Footprint SecurityDescriptor="" PackageRef="Default" PlacementRules="0" Verified="true" IdPool="0:4" Name="KX-7" Author="budarin.l" Created="UTC 2020-10-27 08:14:27" Modified="UTC 2021-12-15 09:22:56">
           <Pads>
             <Pad PadNumber="2" Location="1.15;-0.9" GPN="0001" PadstackRef="SMD_RCRect1.4x1.2x0.3" />
             <Pad PadNumber="3" Location="1.15;0.9" GPN="0002" PadstackRef="SMD_RCRect1.4x1.2x0.3" />
@@ -320,7 +320,7 @@
                 <RectangleG Style="PlacementOutlineFigure" Layer="PLACEMENT_OUTLINE_MOUNT" Flags="ColorByLayer" Location="-1.85;-1.5" Width="3.7" Height="3" />
               </PlacementOutlineX>
               <CircleG Layer="ASSEMBLY_MOUNT" Flags="ColorByLayer" FillColor="00000000" BorderWidth="0.254" BorderColor="00000000" Center="-1;-0.5" Radius="0.3" />
-              <CircleG Layer="SILK_MOUNT" Flags="ColorByLayer" FillColor="00000000" BorderWidth="0.254" BorderColor="00000000" Center="-2.1;-1.8" Radius="0.1" />
+              <CircleG Layer="SILK_MOUNT" Flags="ColorByLayer" FillColor="00000000" BorderWidth="0.254" BorderColor="00000000" Center="-2.2;-1.1" Radius="0.1" />
               <PolylineX Layer="ASSEMBLY_MOUNT" Flags="ColorByLayer" LineWidth="0.15" LineColor="00000000">
                 <Line StartPoint="-1.6;1.25" EndPoint="1.6;1.25" />
               </PolylineX>
@@ -334,19 +334,19 @@
                 <Line StartPoint="-1.6;-1.25" EndPoint="-1.6;1.25" />
               </PolylineX>
               <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.15" LineColor="00000000">
-                <Line StartPoint="-1;1.9" EndPoint="1;1.9" />
+                <Line StartPoint="-0.35;1.5" EndPoint="0.35;1.5" />
               </PolylineX>
               <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.15" LineColor="00000000">
-                <Line StartPoint="-1;-1.9" EndPoint="1;-1.9" />
+                <Line StartPoint="-0.25;-1.25" EndPoint="0.25;-1.25" />
               </PolylineX>
               <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.15" LineColor="00000000">
-                <Line StartPoint="2.2;-1" EndPoint="2.2;1" />
+                <Line StartPoint="1.85;-0.25" EndPoint="1.85;0.25" />
               </PolylineX>
               <PolylineX Layer="SILK_MOUNT" Flags="ColorByLayer" LineWidth="0.15" LineColor="00000000">
-                <Line StartPoint="-2.2;-1" EndPoint="-2.2;1" />
+                <Line StartPoint="-1.85;-0.25" EndPoint="-1.85;0.25" />
               </PolylineX>
-              <AttributeG Layer="SILK_MOUNT" Flags="ColorByLayer" Alignment="{Center,Middle}" Color="FFFFFFFF" Location="0;3" Name="RefDes">
-                <SchematicFont FontFamily="GOST type A" Size="1.5" Style="Bold" />
+              <AttributeG Layer="SILK_MOUNT" Flags="ColorByLayer" Alignment="{Center,Middle}" Color="FFFFFFFF" Location="0;2.6" Name="RefDes">
+                <SchematicFont FontFamily="GOST 26.008—85" Size="1" Style="Bold" />
               </AttributeG>
               <AttributeG Layer="ASSEMBLY_MOUNT" Flags="ColorByLayer" Alignment="{Center,Middle}" Color="FFFFFFFF" Name="RefDes">
                 <SchematicFont FontFamily="GOST type A" Size="1" />
@@ -449,11 +449,11 @@
         </Footprint>
       </Folder>
       <Folder Name="Компоненты" Type="Components" Flags="System" SecurityDescriptor="">
-        <Component Name="HC-49US" Prefix="ZQ" Family="ZQ" Description="Кварцевый резонатор HC-49US, 8 MHz" Created="UTC 2020-10-27 08:14:27" Modified="UTC 2021-03-12 09:46:37" Valid="true" SecurityDescriptor="">
+        <Component Name="HC-49US" Prefix="ZQ" Family="ZQ" Description="Кварцевый резонатор HC-49US, 8 MHz" Created="UTC 2020-10-27 08:14:27" Modified="UTC 2022-03-23 10:23:23" PartsNamePattern="{PartNumber}" Valid="true" SecurityDescriptor="">
           <Parts>
             <Part>
-              <Attribute Name="PartName">HC-49US</Attribute>
-              <Attribute Name="PartNumber">HC-49US</Attribute>
+              <Attribute Name="PartName">HC-49/U-S8000000ABJB</Attribute>
+              <Attribute Name="PartNumber">HC-49/U-S8000000ABJB</Attribute>
               <Attribute Name="Footprint">HC-49UC</Attribute>
               <Attribute Name="Weight" />
               <Attribute Name="Comment" />
@@ -468,7 +468,7 @@
             <Pin Id="2" Label="2" Name="2" Type="Passive" Order="2" />
           </Pins>
           <Designs>
-            <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2020-10-29 07:53:46" Created="UTC 2020-10-27 08:14:27" Number="0">
+            <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2022-03-21 11:07:23" Created="UTC 2020-10-27 08:14:27" Number="0">
               <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
                 <Pins>
                   <PinImplementation PinId="1" SymbolPinId="1" />
@@ -479,14 +479,18 @@
                 <Graphics>
                   <RotatedView>
                     <Graphics>
-                      <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-5" Width="6" Height="10" />
-                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-1.27;3.73" Name="RefDes" />
-                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-3;-5" />
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-3" Width="6" Height="6" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Alignment="{Center,Bottom}" Location="0;3" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="0;-3" Alignment="{Center,Top}">
+                        <AttributeG Flags="NotMovable NotRotatable NotFlippable NotCopyable" Alignment="{Center,Top}" Name="PartNumber">
+                          <SchematicFont FontFamily="GOST" Size="2" />
+                        </AttributeG>
+                      </AttributesContainerG>
                       <SymbolPin Offset="-3;0" PinId="1" Length="1" Direction="Left" AttributesArrangement="Custom">
                         <AttributeG Flags="NotVisible" Alignment="{Left,Middle}" Location="2.27;0" Name="Label">
                           <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
                         </AttributeG>
-                        <AttributeG Flags="NotVisible" Alignment="{Right,Bottom}" Location="-1.032;0" Text="1" Name="PadNumber">
+                        <AttributeG Flags="NotVisible" Alignment="{Right,Bottom}" Location="-1.032;0" Text="?" Name="PadNumber">
                           <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
                         </AttributeG>
                         <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Right,Middle}" Location="-4;0" Text="1" Name="TG" />
@@ -495,7 +499,7 @@
                         <AttributeG Flags="NotVisible" Alignment="{Right,Middle}" Location="-2.27;0" Name="Label">
                           <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
                         </AttributeG>
-                        <AttributeG Flags="NotVisible" Location="1.032;0" Text="2" Name="PadNumber">
+                        <AttributeG Flags="NotVisible" Location="1.032;0" Text="?" Name="PadNumber">
                           <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
                         </AttributeG>
                         <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Left,Middle}" Location="4;0" Text="2" Name="TG" />
@@ -517,6 +521,335 @@
                       </PolylineX>
                       <PolylineX LineWidth="0.254" LineColor="FF0000FF">
                         <Line StartPoint="1;-3" EndPoint="1;3" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                  <RotatedView Flipped="true">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-3" Width="6" Height="6" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Alignment="{Center,Bottom}" Location="0;3" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="0;-3" Alignment="{Center,Top}">
+                        <AttributeG Flags="NotMovable NotRotatable NotFlippable NotCopyable" Alignment="{Center,Top}" Name="PartNumber">
+                          <SchematicFont FontFamily="GOST" Size="2" />
+                        </AttributeG>
+                      </AttributesContainerG>
+                      <SymbolPin Offset="3;0" PinId="1" Length="1" Direction="Right" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Alignment="{Right,Middle}" Location="-2.27;0" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Alignment="{Left,Top}" Location="1.032;0" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Left,Middle}" Location="4;0" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="-3;0" PinId="2" Length="1" Direction="Left" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Alignment="{Left,Middle}" Location="2.27;0" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Alignment="{Right,Top}" Location="-1.032;0" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Right,Middle}" Location="-4;0" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;2" EndPoint="2;-2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="1;3" EndPoint="1;-3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-1;3" EndPoint="1;3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="1;-3" EndPoint="-1;-3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;-2" EndPoint="-2;2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-1;-3" EndPoint="-1;3" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                  <RotatedView Angle="Angle90">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-3" Width="6" Height="6" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Alignment="{Right,Middle}" Location="-3;0" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="3;0" Angle="90" Alignment="{Center,Top}">
+                        <AttributeG Flags="NotMovable NotRotatable NotFlippable NotCopyable" Angle="90" Alignment="{Center,Top}" Name="PartNumber">
+                          <SchematicFont FontFamily="GOST" Size="2" />
+                        </AttributeG>
+                      </AttributesContainerG>
+                      <SymbolPin Offset="0;-3" PinId="1" Length="1" Direction="Down" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;2.27" Text="1" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Bottom}" Location="0;-1.032" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;3" PinId="2" Length="1" Direction="Up" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Middle}" Location="0;-2.27" Text="2" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Angle="90" Location="0;1.032" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Left,Middle}" Location="0;4" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;-2" EndPoint="2;-2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;-1" EndPoint="3;-1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;1" EndPoint="-3;-1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;-1" EndPoint="3;1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;2" EndPoint="-2;2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;1" EndPoint="-3;1" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                  <RotatedView Angle="Angle90" Flipped="true">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-3" Width="6" Height="6" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Alignment="{Right,Middle}" Location="-3;0" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="3;0" Angle="90" Alignment="{Center,Top}">
+                        <AttributeG Flags="NotMovable NotRotatable NotFlippable NotCopyable" Angle="90" Alignment="{Center,Top}" Name="PartNumber">
+                          <SchematicFont FontFamily="GOST" Size="2" />
+                        </AttributeG>
+                      </AttributesContainerG>
+                      <SymbolPin Offset="0;3" PinId="1" Length="1" Direction="Up" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Middle}" Location="0;-2.27" Text="1" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Top}" Location="0;1.032" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Left,Middle}" Location="0;4" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;-3" PinId="2" Length="1" Direction="Down" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;2.27" Text="2" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Top}" Location="0;-1.032" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;2" EndPoint="2;2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;1" EndPoint="3;1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;-1" EndPoint="-3;1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;1" EndPoint="3;-1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;-2" EndPoint="-2;-2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;-1" EndPoint="-3;-1" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                  <RotatedView Angle="Angle180">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-3" Width="6" Height="6" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Alignment="{Center,Top}" Location="0;-3" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="0;3" Alignment="{Center,Bottom}">
+                        <AttributeG Flags="NotMovable NotRotatable NotFlippable NotCopyable" Alignment="{Center,Top}" Name="PartNumber">
+                          <SchematicFont FontFamily="GOST" Size="2" />
+                        </AttributeG>
+                      </AttributesContainerG>
+                      <SymbolPin Offset="3;0" PinId="1" Length="1" Direction="Right" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Alignment="{Right,Middle}" Location="-2.27;0" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Alignment="{Left,Top}" Location="1.032;0" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Left,Middle}" Location="4;0" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="-3;0" PinId="2" Length="1" Direction="Left" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Alignment="{Left,Middle}" Location="2.27;0" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Alignment="{Right,Top}" Location="-1.032;0" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Right,Middle}" Location="-4;0" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;-2" EndPoint="2;2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="1;-3" EndPoint="1;3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-1;-3" EndPoint="1;-3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="1;3" EndPoint="-1;3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;2" EndPoint="-2;-2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-1;3" EndPoint="-1;-3" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                  <RotatedView Angle="Angle180" Flipped="true">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-3" Width="6" Height="6" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Alignment="{Center,Top}" Location="0;-3" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="0;3" Alignment="{Center,Bottom}">
+                        <AttributeG Flags="NotMovable NotRotatable NotFlippable NotCopyable" Alignment="{Center,Top}" Name="PartNumber">
+                          <SchematicFont FontFamily="GOST" Size="2" />
+                        </AttributeG>
+                      </AttributesContainerG>
+                      <SymbolPin Offset="-3;0" PinId="1" Length="1" Direction="Left" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Alignment="{Left,Middle}" Location="2.27;0" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Alignment="{Right,Bottom}" Location="-1.032;0" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Right,Middle}" Location="-4;0" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="3;0" PinId="2" Length="1" Direction="Right" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Alignment="{Right,Middle}" Location="-2.27;0" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Location="1.032;0" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Alignment="{Left,Middle}" Location="4;0" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;-2" EndPoint="-2;2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-1;-3" EndPoint="-1;3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="1;-3" EndPoint="-1;-3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-1;3" EndPoint="1;3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;2" EndPoint="2;-2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="1;3" EndPoint="1;-3" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                  <RotatedView Angle="Angle270">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-3" Width="6" Height="6" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Alignment="{Left,Middle}" Location="3;0" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-3;0" Angle="90" Alignment="{Center,Bottom}">
+                        <AttributeG Flags="NotMovable NotRotatable NotFlippable NotCopyable" Angle="90" Alignment="{Center,Bottom}" Name="PartNumber">
+                          <SchematicFont FontFamily="GOST" Size="2" />
+                        </AttributeG>
+                      </AttributesContainerG>
+                      <SymbolPin Offset="0;3" PinId="1" Length="1" Direction="Up" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Middle}" Location="0;-2.27" Text="1" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Top}" Location="0;1.032" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Left,Middle}" Location="0;4" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;-3" PinId="2" Length="1" Direction="Down" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;2.27" Text="2" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Top}" Location="0;-1.032" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;2" EndPoint="-2;2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;1" EndPoint="-3;1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;-1" EndPoint="3;1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;1" EndPoint="-3;-1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;-2" EndPoint="2;-2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;-1" EndPoint="3;-1" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                  <RotatedView Angle="Angle270" Flipped="true">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-3;-3" Width="6" Height="6" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Alignment="{Left,Middle}" Location="3;0" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="-3;0" Angle="90" Alignment="{Center,Bottom}">
+                        <AttributeG Flags="NotMovable NotRotatable NotFlippable NotCopyable" Angle="90" Alignment="{Center,Bottom}" Name="PartNumber">
+                          <SchematicFont FontFamily="GOST" Size="2" />
+                        </AttributeG>
+                      </AttributesContainerG>
+                      <SymbolPin Offset="0;-3" PinId="1" Length="1" Direction="Down" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Left,Middle}" Location="0;2.27" Text="1" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Bottom}" Location="0;-1.032" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;3" PinId="2" Length="1" Direction="Up" AttributesArrangement="Custom">
+                        <AttributeG Flags="NotVisible" Angle="90" Alignment="{Right,Middle}" Location="0;-2.27" Text="2" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Flags="NotVisible" Angle="90" Location="0;1.032" Text="?" Name="PadNumber">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="TagLabelText" Flags="NotSubSelectable" Angle="90" Alignment="{Left,Middle}" Location="0;4" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;-2" EndPoint="-2;-2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;-1" EndPoint="-3;-1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;1" EndPoint="3;-1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;-1" EndPoint="-3;1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;2" EndPoint="2;2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;1" EndPoint="3;1" />
                       </PolylineX>
                     </Graphics>
                   </RotatedView>
@@ -835,11 +1168,22 @@
             </FootprintView>
           </Designs>
         </Component>
-        <Component Name="KX-7" Prefix="ZQ" Family="ZQ" Description="Кварцевый резонатор KX-7, 32 MHz, SMD" Created="UTC 2020-10-27 08:14:27" Modified="UTC 2021-04-02 11:53:23" Valid="true" SecurityDescriptor="">
+        <Component Name="KX-7" Prefix="ZQ" Family="ZQ" Description="Кварцевый резонатор KX-7, 32 MHz, SMD" Created="UTC 2020-10-27 08:14:27" Modified="UTC 2022-02-18 10:15:17" Valid="true" SecurityDescriptor="">
           <Parts>
             <Part>
               <Attribute Name="PartName">KX-7, 8.0 MHz</Attribute>
               <Attribute Name="PartNumber">KX-7, 8.0 MHz</Attribute>
+              <Attribute Name="Footprint">KX-7</Attribute>
+              <Attribute Name="Weight" />
+              <Attribute Name="Comment" />
+              <Attribute Name="Actual" />
+              <Attribute Name="TU" />
+              <Attribute Name="Frequency">8 MHz</Attribute>
+              <Attribute Name="Manufacturer" />
+            </Part>
+            <Part>
+              <Attribute Name="PartName">KX-7, 32.0 MHz</Attribute>
+              <Attribute Name="PartNumber">KX-7, 32.0 MHz</Attribute>
               <Attribute Name="Footprint">KX-7</Attribute>
               <Attribute Name="Weight" />
               <Attribute Name="Comment" />
@@ -856,7 +1200,7 @@
             <Pin Id="4" Label="4" Name="4" Type="Passive" Order="4" />
           </Pins>
           <Designs>
-            <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2021-01-19 11:24:30" Created="UTC 2020-10-27 08:14:27" Number="0">
+            <SymbolView Name="Normal" SecurityDescriptor="" IsDefault="true" Modified="UTC 2022-02-18 10:13:42" Created="UTC 2020-10-27 08:14:27" Number="0">
               <Gate Name="Part A" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
                 <Pins>
                   <PinImplementation PinId="1" SymbolPinId="1" />
@@ -870,10 +1214,8 @@
                   <RotatedView>
                     <Graphics>
                       <PinRectangle Flags="NotSelectable NotVisible" Location="-9;-10" Width="18" Height="20" />
-                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="5.81;4.73" Name="RefDes" />
-                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="23;-4" Alignment="{Right,Top}">
-                        <AttributeG Style="AttributeText" Flags="NotMovable NotRotatable NotFlippable NotCopyable" Alignment="{Right,Top}" Name="PartNumber" />
-                      </AttributesContainerG>
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="4;5" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Alignment="{Center,Middle}" />
                       <SymbolPin Offset="-9;0" PinId="1" Length="5" Direction="Left" AttributesArrangement="Horizontal">
                         <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Left,Middle}" Location="5.75;0" Name="Label">
                           <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
@@ -928,10 +1270,187 @@
                       </PolylineX>
                     </Graphics>
                   </RotatedView>
+                  <RotatedView Angle="Angle90">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-10;-9" Width="20" Height="18" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="5;4" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Angle="90" Alignment="{Center,Middle}" />
+                      <SymbolPin Offset="0;-9" PinId="1" Length="5" Direction="Down" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Center,Bottom}" Location="0;5.75" Text="1" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Alignment="{Left,Top}" Location="0.7;4.8" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="-10;0" PinId="2" Length="5" Direction="Left" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Left,Middle}" Location="5.75;0" Text="2" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Alignment="{Right,Bottom}" Location="4.5;0.2" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Alignment="{Right,Middle}" Location="-4;0" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;9" PinId="3" Length="5" Direction="Up" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Center,Top}" Location="0;-5.75" Text="3" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Location="0.7;-4.8" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Angle="90" Alignment="{Left,Middle}" Location="0;4" Text="3" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="10;0" PinId="4" Length="5" Direction="Right" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Right,Middle}" Location="-5.75;0" Text="4" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Location="-4.5;0.2" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Alignment="{Left,Middle}" Location="4;0" Text="4" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="4;-1" EndPoint="-4;-1" />
+                        <Line StartPoint="-4;-1" EndPoint="-4;1" />
+                        <Line StartPoint="-4;1" EndPoint="4;1" />
+                        <Line StartPoint="4;1" EndPoint="4;-1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;2" EndPoint="3;2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-3;-2" EndPoint="3;-2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="0;2" EndPoint="0;4" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="0;-2" EndPoint="0;-4" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="5;-4" EndPoint="-5;-4" />
+                        <Line StartPoint="-5;-4" EndPoint="-5;4" />
+                        <Line StartPoint="-5;4" EndPoint="5;4" />
+                        <Line StartPoint="5;4" EndPoint="5;-4" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                  <RotatedView Angle="Angle180">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-9;-10" Width="18" Height="20" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="4;5" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Alignment="{Center,Middle}" />
+                      <SymbolPin Offset="9;0" PinId="1" Length="5" Direction="Right" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Right,Middle}" Location="-5.75;0" Text="1" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Location="-4.5;0.2" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Alignment="{Left,Middle}" Location="4;0" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;-10" PinId="2" Length="5" Direction="Down" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Center,Bottom}" Location="0;5.75" Text="2" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Alignment="{Left,Top}" Location="0.7;4.8" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="-9;0" PinId="3" Length="5" Direction="Left" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Left,Middle}" Location="5.75;0" Text="3" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Alignment="{Right,Bottom}" Location="4.5;0.2" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Alignment="{Right,Middle}" Location="-4;0" Text="3" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;10" PinId="4" Length="5" Direction="Up" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Center,Top}" Location="0;-5.75" Text="4" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Location="0.7;-4.8" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Angle="90" Alignment="{Left,Middle}" Location="0;4" Text="4" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="1;4" EndPoint="1;-4" />
+                        <Line StartPoint="1;-4" EndPoint="-1;-4" />
+                        <Line StartPoint="-1;-4" EndPoint="-1;4" />
+                        <Line StartPoint="-1;4" EndPoint="1;4" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;-3" EndPoint="-2;3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;-3" EndPoint="2;3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;0" EndPoint="-4;0" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;0" EndPoint="4;0" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="4;5" EndPoint="4;-5" />
+                        <Line StartPoint="4;-5" EndPoint="-4;-5" />
+                        <Line StartPoint="-4;-5" EndPoint="-4;5" />
+                        <Line StartPoint="-4;5" EndPoint="4;5" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                  <RotatedView Angle="Angle270">
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-10;-9" Width="20" Height="18" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="5;4" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Angle="90" Alignment="{Center,Middle}" />
+                      <SymbolPin Offset="0;9" PinId="1" Length="5" Direction="Up" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Center,Top}" Location="0;-5.75" Text="1" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Location="0.7;-4.8" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Angle="90" Alignment="{Left,Middle}" Location="0;4" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="10;0" PinId="2" Length="5" Direction="Right" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Right,Middle}" Location="-5.75;0" Text="2" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Location="-4.5;0.2" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Alignment="{Left,Middle}" Location="4;0" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;-9" PinId="3" Length="5" Direction="Down" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Center,Bottom}" Location="0;5.75" Text="3" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Alignment="{Left,Top}" Location="0.7;4.8" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="3" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="-10;0" PinId="4" Length="5" Direction="Left" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Left,Middle}" Location="5.75;0" Text="4" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Alignment="{Right,Bottom}" Location="4.5;0.2" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Alignment="{Right,Middle}" Location="-4;0" Text="4" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-4;1" EndPoint="4;1" />
+                        <Line StartPoint="4;1" EndPoint="4;-1" />
+                        <Line StartPoint="4;-1" EndPoint="-4;-1" />
+                        <Line StartPoint="-4;-1" EndPoint="-4;1" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;-2" EndPoint="-3;-2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="3;2" EndPoint="-3;2" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="0;-2" EndPoint="0;-4" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="0;2" EndPoint="0;4" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-5;4" EndPoint="5;4" />
+                        <Line StartPoint="5;4" EndPoint="5;-4" />
+                        <Line StartPoint="5;-4" EndPoint="-5;-4" />
+                        <Line StartPoint="-5;-4" EndPoint="-5;4" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
                 </Graphics>
               </InternalSymbol>
             </SymbolView>
-            <FootprintView Name="KX-7" SecurityDescriptor="" Modified="UTC 2021-04-02 11:53:23" Created="UTC 2020-10-27 08:14:27" FootprintRef="KX-7">
+            <FootprintView Name="KX-7" SecurityDescriptor="" Modified="UTC 2021-12-15 09:22:56" Created="UTC 2020-10-27 08:14:27" FootprintRef="KX-7">
               <Pins>
                 <PinRef PinId="1" PadNumber="1" />
                 <PinRef PinId="2" PadNumber="2" />
@@ -1256,6 +1775,110 @@
               </InternalSymbol>
             </SymbolView>
             <FootprintView Name="KX-9A" SecurityDescriptor="" Modified="UTC 2020-12-22 08:55:00" Created="UTC 2020-10-27 08:14:27" FootprintRef="KX-9A">
+              <Pins>
+                <PinRef PinId="1" PadNumber="1" />
+                <PinRef PinId="2" PadNumber="2" />
+                <PinRef PinId="3" PadNumber="3" />
+                <PinRef PinId="4" PadNumber="4" />
+              </Pins>
+            </FootprintView>
+          </Designs>
+        </Component>
+        <Component Name="NX3225SA" Prefix="ZQ" Family="ZQ" Created="UTC 2021-12-15 09:02:25" Modified="UTC 2021-12-15 09:22:56" Valid="true" SecurityDescriptor="">
+          <Parts>
+            <Part>
+              <Attribute Name="PartName">NX3225SA-32. 000MHZ-STD-CSR-1</Attribute>
+              <Attribute Name="PartNumber">NX3225SA-32. 000MHZ-STD-CSR-1</Attribute>
+              <Attribute Name="Footprint">KX-7</Attribute>
+              <Attribute Name="Weight" />
+              <Attribute Name="Comment" />
+              <Attribute Name="Actual" />
+              <Attribute Name="TU" />
+              <Attribute Name="Frequency" />
+              <Attribute Name="Manufacturer" />
+            </Part>
+          </Parts>
+          <Pins>
+            <Pin Id="1" Label="1" Name="1" Order="1" />
+            <Pin Id="2" Label="2" Name="2" Order="2" />
+            <Pin Id="3" Label="3" Name="3" Order="3" />
+            <Pin Id="4" Label="4" Name="4" Order="4" />
+          </Pins>
+          <Designs>
+            <SymbolView Name="По умолчанию" SecurityDescriptor="" IsDefault="true" Modified="UTC 2021-12-15 09:06:09" Created="UTC 2021-12-15 09:02:25" Number="0">
+              <Gate Name="" Group="1" Number="1" LocalSymbol="true" SymbolRef="Internal Symbol">
+                <Pins>
+                  <PinImplementation PinId="1" SymbolPinId="1" />
+                  <PinImplementation PinId="2" SymbolPinId="2" />
+                  <PinImplementation PinId="3" SymbolPinId="3" />
+                  <PinImplementation PinId="4" SymbolPinId="4" />
+                </Pins>
+              </Gate>
+              <InternalSymbol Name="Internal Symbol" BaseGrid="1" CanRotate="true">
+                <Graphics>
+                  <RotatedView>
+                    <Graphics>
+                      <PinRectangle Flags="NotSelectable NotVisible" Location="-9;-7" Width="18" Height="14" />
+                      <AttributeG Style="RefDes" Flags="NotDeletable NotCopyable" Location="-10;5" Name="RefDes" />
+                      <AttributesContainerG Style="AttributeText" Flags="NotDeletable NotCopyable" Location="2;-5" />
+                      <SymbolPin Offset="-9;0" PinId="1" Length="5" Direction="Left" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Left,Middle}" Location="5.75;0" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Alignment="{Right,Bottom}" Location="4.5;0.2" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Alignment="{Right,Middle}" Location="-4;0" Text="1" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;7" PinId="2" Length="2" Direction="Up" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Center,Top}" Location="0;-2.75" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Location="0.7;-1.8" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Angle="90" Alignment="{Left,Middle}" Location="0;4" Text="2" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="9;0" PinId="3" Length="5" Direction="Right" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Right,Middle}" Location="-5.75;0" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Location="-4.5;0.2" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Alignment="{Left,Middle}" Location="4;0" Text="3" Name="TG" />
+                      </SymbolPin>
+                      <SymbolPin Offset="0;-7" PinId="4" Length="2" Direction="Down" AttributesArrangement="Horizontal">
+                        <AttributeG Flags="NotVisible NotMovable NotRotatable NotFlippable" Alignment="{Center,Bottom}" Location="0;2.75" Name="Label">
+                          <SchematicFont FontFamily="Times New Roman" Size="1.681758" />
+                        </AttributeG>
+                        <AttributeG Style="FontGOSTH18" Flags="NotMovable NotRotatable NotFlippable" Alignment="{Left,Top}" Location="0.7;1.8" Text="?" Name="PadNumber" />
+                        <AttributeG Style="TagLabelText" Flags="NotMovable NotSubSelectable NotRotatable NotFlippable" Angle="90" Alignment="{Right,Middle}" Location="0;-4" Text="4" Name="TG" />
+                      </SymbolPin>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-1;-4" EndPoint="-1;4" />
+                        <Line StartPoint="-1;4" EndPoint="1;4" />
+                        <Line StartPoint="1;4" EndPoint="1;-4" />
+                        <Line StartPoint="1;-4" EndPoint="-1;-4" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;3" EndPoint="2;-3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;3" EndPoint="-2;-3" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="2;0" EndPoint="4;0" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-2;0" EndPoint="-4;0" />
+                      </PolylineX>
+                      <PolylineX LineWidth="0.254" LineColor="FF0000FF">
+                        <Line StartPoint="-4;-5" EndPoint="-4;5" />
+                        <Line StartPoint="-4;5" EndPoint="4;5" />
+                        <Line StartPoint="4;5" EndPoint="4;-5" />
+                        <Line StartPoint="4;-5" EndPoint="-4;-5" />
+                      </PolylineX>
+                    </Graphics>
+                  </RotatedView>
+                </Graphics>
+              </InternalSymbol>
+            </SymbolView>
+            <FootprintView Name="KX-7" SecurityDescriptor="" Modified="UTC 2021-12-15 09:22:56" Created="UTC 2021-12-15 09:06:12" FootprintRef="KX-7">
               <Pins>
                 <PinRef PinId="1" PadNumber="1" />
                 <PinRef PinId="2" PadNumber="2" />
