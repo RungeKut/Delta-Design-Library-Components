@@ -30,7 +30,7 @@
    6. Ждем. 145 проектов выгружалось примерно 10 минут. -> Готово
    
 ## Citation
-![pdf](https://github.com/RungeKut/Delta-Design-Library-Components/raw/main/supplementary_files/Стандарты IPC.pdf)​
+![Стандарты IPC](https://github.com/RungeKut/Delta-Design-Library-Components/blob/main/supplementary_files/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B%20IPC.pdf)​
 ## Contacts
 -  [bolshakov.s@madin.ru]
 
